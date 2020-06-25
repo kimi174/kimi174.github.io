@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="refresh" content="0;http://www.baidu.com">-->
+    <title>请登录</title>
+    <style type="text/css">
+        body{
+            margin:0px;
+        }
+        div#content
+        {
+            width:100%;
+            height:720px;
+        }
+        div#space1
+        {
+            width:10%;
+            height:250px;
+            float:left;
+        }
+        div#log1
+        {
+            width:14%;
+            height:250px;
+            background-color:pink;
+            float:left;
+        }
+        div#message
+        {
+            width:20%;
+            height:250px;
+            float:left;
+        }
+        div#log2
+        {
+            color:white;
+            width:20%;
+            height:250px;
+            float:left;
+        }
+        div#log3
+        {
+            //background-color:aqua;
+            color:white;
+            width:20%;
+            height:300px;
+            float:left;
+        }
+        div#log4
+        {
+            background-color:white;
+            width:40%;
+            height:200px;
+            clear:both;
+            float:left;
+        }
+    </style>
+</head>
+<body background="picture/login_img.png">
+    <div id="content">
+        <div id="head">
+            <h1 align="center"><font color="white">请输入用户名和密码</font></h1>
+            <h2 align="center"><a href="first_learn.html">返回</a></h2>
+        </div>
+        <div id="space1"></div>
+        <div id="log1">
+            <form action="">
+                用户名：
+                <input type="text" autocomplete="on" value="小明" name="name" autofocus><br/>
+
+                <label for="pass">
+                密码：
+                <input type="password" id="pass"><br/><br/>
+                </label>
+
+                性别:
+                男 <input type="radio" name="sex">
+                女 <input type="radio" name="sex"><br/><br/>
+                <select name="" id="site">
+                    <option value="">www.baidu.com</option>
+                    <option value="">www.youtube.com</option>
+                    <option value="">www.google.com</option>
+                </select><br/><br/>
+                <input type="button" value="登录">
+
+            </form>
+
+        </div>
+        <div id="message">
+            <textarea name="" id="" cols="30" rows="10">填写信息</textarea>
+        </div>
+        <div id="log2">
+            <fieldset>
+                <legend>基本信息</legend>
+                <label for="name">姓名：</label><input type="text" name="name" id="name"><br><br>
+                <label for="age">年龄：</label><input type="text" name="age" id="age">
+            </fieldset>
+            <fieldset>
+                <legend>调查内容</legend>
+                <p>相关问题</p>
+                <label for="q1">问题1</label><input type="text" id="q1"><br>
+                <label for="q2">问题2</label><input type="text" id="q2"><br>
+            </fieldset>
+        </div>
+        <div id="log3">
+            <fieldset>
+                <legend>时间</legend>
+                <label for="">时间:<input type="time"></label><br><br>
+                <label for="">日期:<input type="date"></label><br><br>
+                <label for="">年月:<input type="month"></label><br><br>
+                <label for="">星期:<input type="week"></label><br><br>
+                <label for="">本地时间和日期:<input type="datetime-local"></label><br><br>
+            </fieldset>
+        </div>
+        <div id="log4"></div>
+    </div>
+</body>
+</html>
