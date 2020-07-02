@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI伪类选择器</title>
+    <style type="text/css">
+        html {
+            background: url("../picture/fams.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        :required {
+            outline: 3px solid blue;
+        }
+        :optional {
+            outline: 3px solid bisque;
+        }
+        :default {
+            outline: 3px solid saddlebrown;
+        }
+        input#file2:valid {
+            border: 2px solid red;
+        }
+        input#file2:invalid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <p>填空1<input type="text" required></p>
+        <p>填空2<input type="text"></p>
+        <p>填空3<input type="email" id="file2"></p>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
